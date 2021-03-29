@@ -3,7 +3,7 @@
     //是否显示了， 用来决定是否监听滚轮
     var If = false;
     //缩放 //按照最长边缩放
-    var startZoom = 0.9
+    var startZoom = 1
     //提示的延时
     var hintTime = 300;
     //遮罩颜色

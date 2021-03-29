@@ -1,17 +1,17 @@
 # YJIC
-写的一个小小项目, 能力有限, 会有BUG 
+第一次公开发布一个小小的项目, 能力有限, 有BUG或建议可以在issues中提出   
 ## 介绍
-js图片查看,缩放,移动,旋转; 
-dome地址：[https://yyznm.gitee.io/yjic](https://yyznm.gitee.io/yjic)
+js图片查看,缩放,移动,旋转;   
+dome地址：[https://yyznm.gitee.io/yjic](https://yyznm.gitee.io/yjic)  
 
-pc端根据鼠标位置缩放 等等等 ...
+pc端根据鼠标位置缩放 等等等 ...  
   
-手机上双指缩放旋转，一张动图解释一切  
+手机上双指缩放旋转，一张动图解释一切   
 ![img](doc/one.gif)
   
 ## 软件架构
 适配性 edge, Chrome ... 还有IE11(你没看错)  
-就测试了这几个浏览器，其他的可以自己尝试
+就测试了这几个浏览器，其他的可以自己尝试  
 dome地址：[https://yyznm.gitee.io/yjic](https://yyznm.gitee.io/yjic)  
 
 ## 安装教程
@@ -19,7 +19,7 @@ dome地址：[https://yyznm.gitee.io/yjic](https://yyznm.gitee.io/yjic)
 最简单用法
 ```html
 <!-- 引入 -->
-<script src="static/YJIC.js"></script>
+<script src="static/YJIC.min.js"></script>
 <script>
     //直接传入img的URL
     YJIC.setData("img_url");
