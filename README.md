@@ -17,9 +17,13 @@ dome地址：[https://yyznm.gitee.io/yjic](https://yyznm.gitee.io/yjic)
 ## 安装教程
 
 最简单用法
-```js
+```html
+<!-- 引入 -->
+<script src="static/YJIC.js"></script>
+<script>
     //直接传入img的URL
     YJIC.setData("img_url");
+</script>
 ```
 
 特殊用法
@@ -51,11 +55,11 @@ setCloseIf(bool) | bool：默认 true | 设置右上角的关闭按钮是否显�
 setHandleIf(bool) | bool：默认 true | 设置操作的按钮组是否显示
 setBackCallback(call) | call：关闭的回调 | 设置关闭回调
 setSizeCallback(call) | call：缩放时的回调  | 设置缩放时的回调
-close() | null | 关闭
-setAdd() | null | 加大
-setSubtract() | null | 减小
-rotateLeft() | null | 向左旋转
-rotateRight() | null | 向右旋转
+close() | 空 | 关闭
+setAdd() | 空 | 加大
+setSubtract() | 空 | 减小
+rotateLeft() | 空 | 向左旋转
+rotateRight() | 空 | 向右旋转
 
 
 #### 特技
