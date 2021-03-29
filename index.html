@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="static/yyz.js"></script>
+    <style>
+         * {
+            margin:0;
+            padding:0;
+        }
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+        .img{
+            width: 300px;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <img class="img" onclick="popup(this)" src="static/img.png">
+    <img class="img" onclick="popup(this)" src="static/img.png">
+    <img class="img" onclick="popup(this)" src="static/img.png">
+    <img class="img" onclick="popup(this)" src="static/img.png">
+    <img class="img" onclick="popup(this)" src="static/img.png">
+    <img class="img" onclick="popup(this)" src="static/img.png">
+    <img class="img" onclick="popup(this)" src="static/img.png">
+    <img class="img" onclick="popup(this)" src="static/img.png">
+    <img class="img" onclick="popup(this)" src="static/img.png">
+    <img class="img" onclick="popup(this)" src="static/img.png">
+
+    <script>
+        function popup(dom){
+            // 初始图片相对浏览器的比例， 按长边算
+            YJIC.setStartZoom(1);
+            // 设置提示延时关闭的时间， 0就不提示
+            YJIC.setHintTime(300);
+            // 设置遮罩颜色
+            YJIC.setBgc('rgba(0,0,0,.7)');
+            // 设置手机两指是否可以旋转
+            YJIC.setDegIf(true)
+            // 设置点击遮罩是否关闭, 只在pc端有效 因为手机端背景用来监听了手势
+            YJIC.setShadeClose(true)
+            // 设置右上角的关闭按钮是否显示
+            YJIC.setCloseIf(true)
+            // 设置操作的按钮组是否显示
+            YJIC.setHandleIf(true)
+            // 设置缩放时的回调
+            YJIC.setSizeCallback(function(s){
+                console.log(s);
+            })
+
+            // 设置并弹出图片, 动画真
+            YJIC.setData(dom, true);
+            // 弹出同时让原来的图片变透明
+            dom.style.opacity = 0
+            // 关闭回调，关闭后让图片显示
+            YJIC.setBackCallback(function(){
+                console.log('关闭了');
+                dom.style.opacity = 1
+            });
+
+        }   
+
+    </script>
+</body>
+</html>
