@@ -277,6 +277,7 @@
                 if (degIf) {
                     var currentDeg = getDeg(event.touches[0], event.touches[1]);
                     deg = currentDeg - startDeg;
+                    // img.style.transformOrigin = startCentreX * 100 +'%, '+startCentreY * 100 +'%';
                     img.style.transform = 'rotate(' + deg + 'deg)';
                 }
             } else if (event.touches.length == 1) {
